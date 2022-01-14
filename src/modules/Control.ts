@@ -65,7 +65,7 @@ class Control {
       // 这里是 set
       this.snake.X = X;
       this.snake.Y = Y;
-    } catch (error) { // 统一处理碰撞等信息结束游戏
+    } catch (error:any) { // 统一处理碰撞等信息结束游戏
       alert(error.message + 'Game Over');
       this.isLive = false;
     }
